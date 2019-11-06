@@ -1,7 +1,8 @@
 a {
   text-decoration: none; }
 
-[type="button"] {
+[type="button"],
+[type="submit"] {
   outline: none;
   border: none;
   cursor: pointer; }
@@ -32,7 +33,7 @@ a {
         background-color: #56ccf2; }
       @media screen and (max-width: 1150px) {
         .wrapper--relative .wrapper__bg {
-          height: 1100px; } }
+          height: 940px; } }
   .wrapper--narrower {
     margin: 0 3%;
     padding: 0 6.58%; }
@@ -84,15 +85,18 @@ a {
   .header__picture {
     position: relative;
     width: 100%;
-    height: 56vw;
+    max-width: 1146px;
+    height: 55.85vw;
     max-height: 640px;
     margin-top: 80px;
     background: url("../images/slider/slide-img-1.jpg") no-repeat center;
     background-size: cover; }
   .header__slider {
     position: absolute;
-    top: calc(50% - 32px);
-    left: -81px; }
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .header__soc {
     position: absolute;
     top: calc(50% - 197px);
@@ -150,13 +154,36 @@ a {
 
 @media screen and (max-width: 1150px) {
   .header__top {
-    padding-left: 15%;
-    padding-right: 40%; }
+    padding-left: 5%;
+    padding-right: 32%; }
   .header__title {
-    font-size: 48px;
+    font-size: 32px;
     line-height: 1.2; }
   .header__top_p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .header__soc {
+    top: 105%;
+    left: 40%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  .header__pic-text {
+    left: 5%;
+    bottom: 5%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); } }
+
+@media screen and (max-width: 700px) {
+  .header__soc {
+    left: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .header__link {
+    margin-right: 0; } }
 
 .menu {
   display: -webkit-box;
@@ -184,6 +211,8 @@ a {
         margin-left: -5%;
         border-radius: 1px;
         background: #fcc304; }
+  .menu--black .menu__item {
+    color: #253757; }
 
 @media screen and (max-width: 1079px) {
   .menu {
@@ -200,7 +229,7 @@ a {
 
 .slider {
   background-color: #fcc304;
-  border-radius: 50px; }
+  border-radius: 38px; }
   .slider__link {
     display: inline-block;
     width: 76px;
@@ -209,6 +238,13 @@ a {
       background: url("../images/slider/arrow-left.svg") no-repeat top 22px center; }
     .slider__link--right {
       background: url("../images/slider/arrow-right.svg") no-repeat top 22px center; }
+
+@media screen and (max-width: 1079px) {
+  .slider__link {
+    width: 38px;
+    height: 32px;
+    background-position: top 8px center;
+    background-size: 10px; } }
 
 .heading__top {
   display: -webkit-box;
@@ -698,6 +734,127 @@ a {
     .oval--12::after {
       width: 46px;
       height: 133px; }
+
+.commun {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 2048px;
+  margin: auto; }
+  .commun__heading {
+    margin-bottom: 104px; }
+  .commun__input {
+    display: block;
+    width: 500px;
+    margin-top: 48px;
+    padding: 18px;
+    font-size: 14.4px;
+    font-weight: bold;
+    color: #152032;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: #fcfcfc; }
+    .commun__input::-webkit-input-placeholder {
+      font-size: 14.4px;
+      font-weight: bold;
+      color: #152032; }
+    .commun__input::-moz-placeholder {
+      font-size: 14.4px;
+      font-weight: bold;
+      color: #152032; }
+    .commun__input:-ms-input-placeholder {
+      font-size: 14.4px;
+      font-weight: bold;
+      color: #152032; }
+    .commun__input::-ms-input-placeholder {
+      font-size: 14.4px;
+      font-weight: bold;
+      color: #152032; }
+    .commun__input::placeholder {
+      font-size: 14.4px;
+      font-weight: bold;
+      color: #152032; }
+  .commun__button {
+    margin-top: 105px;
+    padding: 16px 92px;
+    font-weight: bold;
+    color: white;
+    border-radius: 28px;
+    background-color: #2f80ed; }
+  .commun__contacts {
+    max-width: 362px;
+    margin-left: 15px; }
+  .commun__p {
+    margin-top: 42px;
+    font-size: 12.6px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #334563; }
+  .commun__link {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56ccf2; }
+  .commun__soc {
+    margin-top: 53px; }
+
+@media screen and (max-width: 999px) {
+  .commun {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .commun__input {
+      width: auto; }
+    .commun__contacts {
+      max-width: 500px;
+      margin-top: 50px; } }
+
+.soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 192px; }
+  .soc__item {
+    width: 32px;
+    height: 32px; }
+    .soc__item--tw {
+      background: url("../images/social/twitter.png") no-repeat;
+      background-size: cover; }
+    .soc__item--inst {
+      background: url("../images/social/insagram.png") no-repeat;
+      background-size: cover; }
+    .soc__item--fb {
+      background: url("../images/social/facebook.png") no-repeat;
+      background-size: cover; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 2048px;
+  margin: auto;
+  padding: 130px 0 80px;
+  font-weight: bold;
+  color: #253757; }
 
 html {
   font-family: Muli, sans-serif;
