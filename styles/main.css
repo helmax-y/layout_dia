@@ -38,6 +38,9 @@ a {
     padding: 0 6.58%; }
   .wrapper--left-side {
     padding-right: 0; }
+    @media screen and (min-width: 2048px) {
+      .wrapper--left-side {
+        padding-right: 10%; } }
 
 .header {
   position: relative;
