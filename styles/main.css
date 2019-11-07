@@ -218,9 +218,7 @@ a {
     margin-left: 63px;
     padding: 25px 0;
     font-weight: bold;
-    color: white;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
+    color: white; }
     .menu__item:hover {
       color: #fcc304; }
     .menu__item--first {
