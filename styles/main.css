@@ -54,9 +54,7 @@ a {
     font-size: 32px;
     font-weight: bold;
     line-height: 1;
-    color: white;
-    -webkit-transition: top 0.3s;
-    transition: top 0.3s; }
+    color: white; }
   .header__menu {
     position: relative;
     width: -webkit-max-content;
@@ -71,16 +69,12 @@ a {
     color: white; }
   .header__title {
     font-size: 64px;
-    font-weight: 900;
-    -webkit-transition: font-size 0.5s;
-    transition: font-size 0.5s; }
+    font-weight: 900; }
   .header__top-p {
     margin-top: 22px;
     margin-bottom: 42px;
     font-size: 24px;
-    color: white;
-    -webkit-transition: font-size 0.3s;
-    transition: font-size 0.3s; }
+    color: white; }
   .header__button {
     padding: 16px 65px;
     font-weight: bold;
@@ -121,10 +115,10 @@ a {
     font-size: 12.6px;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s; }
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
   .header__link {
     margin-right: 65px;
     padding: 10px;
@@ -139,8 +133,8 @@ a {
       margin-left: -5%;
       margin-bottom: -4px;
       border-radius: 1px;
-      -webkit-transition: background-color 0.6s, width 0.6s;
-      transition: background-color 0.6s, width 0.6s; }
+      -webkit-transition: background-color 0.5s, width 0.5s;
+      transition: background-color 0.5s, width 0.5s; }
     .header__link:hover::after {
       width: 110%;
       background-color: #fcc304; }
@@ -149,10 +143,10 @@ a {
     bottom: 86px;
     left: 98px;
     max-width: 264px;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s; }
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
   .header__pic-h2 {
     font-size: 12.6px;
     font-weight: 800;
@@ -242,9 +236,7 @@ a {
         border-radius: 1px;
         background: #fcc304; }
   .menu--black .menu__item {
-    color: #253757;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
+    color: #253757; }
     .menu--black .menu__item:hover {
       color: #56ccf2; }
 
